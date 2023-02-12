@@ -1,7 +1,5 @@
 name: Check and Release Build
-on:
-  push:
-      branches: ['*']
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     name: Build
